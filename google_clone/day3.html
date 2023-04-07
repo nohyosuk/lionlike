@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노글</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="day3.css">
+    <script src="day3.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left_serviece">
+                <div><a href="">Google 정보</a></div>
+                <div><a href="">스토어</a></div>
+            </div>
+
+            <div class="right_serviece">
+                <div class="gmail"><a href="">Gmail</a></div>
+                <div class="images"><a href="">이미지</a></div>  
+                <div class="Menu"><a href=""><i class="fas fa-bars"></i></a></div>  
+                <div class="login"><a href="">로그인</a></div>  
+                <div class="darkmode"><button onclick="toggleDarkMode()">다크 모드</button></div>
+
+            </div>
+        </nav>
+    </header>
+
+    <h1>   
+        <span>N</span>          
+        <span>o</span>          
+        <span>o</span>          
+        <span>g</span>          
+        <span>l</span>          
+        <span>e</span>          
+    </h1>           
+
+    <form action="https://www.google.com/search" method="get">
+        <div class="form_"> 
+            <input type="text" name="q" placeholder="검색어를 입력하세요" class="search_bar">   
+        </div>
+    
+        <div class="btn_">
+            <button class="btn" type="submit">Google 검색</button>
+            <button class="btn" type="button">I'm feel Lucky</button>
+        </div>
+    </form>
+    <script>
+        function toggleDarkMode() {
+          const body = document.querySelector('body');
+          body.classList.toggle('dark');
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_serviece, .right_serviece {
+    display: flex;
+    align-items: center;
+}
+
+.left_serviece div, .right_serviece div {
+    padding: 5px;
+    margin: 5px;
+}
+
+.left_serviece div a, .right_serviece div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+h1 {
+    margin-top: 230px;
+    text-align: center;
+    font-size: 90px;
+    letter-spacing: -10px;
+    margin-bottom: 0px;
+}
+
+h1 span:nth-child(1), h1 span:nth-child(5) {
+    color: #4285F4;
+    font-weight: bold;
+}
+
+h1 span:nth-child(2), h1 span:nth-child(6) {
+    color: #DB4437;
+    font-weight: bold;
+}
+
+h1 span:nth-child(3) {
+    color: #F4B400;
+    font-weight: bold;
+}
+
+h1 span:nth-child(4) {
+    color: #0F9D58;
+    font-weight: bold;
+}
+
+.form_ {
+    text-align: center;
+}
+
+.search_bar {
+    margin-top: 21px;
+    width: 616px;
+    height: 46px;
+    border: 1px solid #DADCE0;
+    border-radius: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+}
+
+.btn_ {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.btn_ button {
+    width: 130px;
+    height: 36px;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 16px;
+    background: #F8F9FA;
+    border: 1px solid #F8F9FA;
+}
