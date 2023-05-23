@@ -1,18 +1,21 @@
-var text = document.getElementById('Input');
-var button = document.getElementById('button1');
-var creat = document.getElementById('creat');
+document.getElementById('button1').addEventListener('click', function () {
+    var input = document.getElementById('Input');
+    var newTask = input.value;
 
-button.addEventListener('click', function() {
-    if(text.value == "") {
-        alert("Please input your text");
-        return;
+    if (newTask !== '') {
+        var table = document.getElementById('table-list');
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+
+        var checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        cell1.appendChild(checkbox);
+
+        cell2.innerHTML = newTask;
+
+        input.value = '';
+    } else {
+        alert("작업을 입력해주세요.");
     }
-    else{
-        var crt =  document.createElement('li');   
-        console.log(text.value);
-        crt.innerText = text.value;
-        creat.appendChild(crt);    
-    }
- 
 });
-
