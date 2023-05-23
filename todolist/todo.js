@@ -19,3 +19,16 @@ document.getElementById('button1').addEventListener('click', function () {
         alert("작업을 입력해주세요.");
     }
 });
+
+document.getElementById('table-list').addEventListener('change', function(e) {
+    if (e.target.type === 'checkbox') {
+        var row = e.target.parentElement.parentElement;
+        if (e.target.checked) {
+            row.style.textDecoration = 'line-through';
+            row.style.color = 'grey';
+        } else {
+            row.style.textDecoration = 'none';
+            row.style.color = 'black';
+        }
+    }
+});
